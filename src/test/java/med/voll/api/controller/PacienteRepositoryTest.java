@@ -40,5 +40,4 @@ public class PacienteRepositoryTest {
         assertEquals("Gabriel Peter", testeSalvo.getNome());
         logger.info("Paciente recuperado: {}", testeSalvo.getEmail());
     }
-    ,++<
 }
