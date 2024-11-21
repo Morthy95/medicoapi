@@ -39,11 +39,6 @@ jobs:
           sleep 2
         done
 
-    - name: Set up Schema
-      run: |
-        mysql -h 127.0.0.1 -uroot -proot -e "CREATE DATABASE IF NOT EXISTS vollmed_api;"
-        mysql -h 127.0.0.1 -uroot -proot vollmed_api < src/main/resources/db/schema.sql
-
     - name: Build with Maven
       run: mvn clean install -Dspring.profiles.active=test
 
