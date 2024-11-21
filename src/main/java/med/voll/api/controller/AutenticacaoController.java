@@ -2,16 +2,17 @@ package med.voll.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PostAuthorize;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
 import jakarta.validation.Valid;
-import med.voll.api.domain.medico.DadosAtualizacaoMedico;
+
 import med.voll.api.domain.usuario.DadosAutenticacao;
 import med.voll.api.domain.usuario.Usuario;
 import med.voll.api.infra.Security.DadosTokenJWT;
